@@ -1,0 +1,21 @@
+@mixin flexElement($justify,$align){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin element($border){
+    background: turquoise;
+    border: $border;
+    border-radius: 35px;
+}
+.header{
+    width: 1400px;
+    height: 52px;
+    @include flexElement(space-around,center);
+    
+}
+.text{
+    background: gold;
+    @include element(2px solid green)
+}
+
